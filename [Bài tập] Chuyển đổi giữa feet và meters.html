@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<input type="number" oninput="feet(this.value)" placeholder="nhap feet">
+<input type="number" oninput="meters(this.value)" placeholder="nhap meters">
+<p> meters : <span id="met"></span></p>
+<p> feet : <span id="feet"></span></p>
+<script>
+    function feet(nhapfeet) {
+nhapfeet=parseFloat(nhapfeet);
+        document.getElementById("feet").innerHTML=nhapfeet*3.279
+    }
+    function meters(nhapmet) {
+        nhapmet=parseFloat(nhapmet);
+        document.getElementById("met").innerHTML=nhapmet*0.305
+    }
+</script>
+</body>
+</html>
